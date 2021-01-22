@@ -34,8 +34,19 @@ public class Main {
         List<Client> clientsList = new ArrayList<>(Arrays.asList(client1, client2, client3, client4, client5, client6));
 
         System.out.println(clientsList);
+
+        // 2.1 przy uzyciu Comparable na klasie obiektow listy
         Collections.sort(clientsList);
         System.out.println(clientsList);
+
+        // 2.2 przez implementacje jakiegos interfejstu przekazane jako parametr do metody sortujacej
+        ClientComparatorByLastName ccbn = new ClientComparatorByLastName();
+        Collections.sort(clientsList, ccbn);
+        System.out.println(clientsList);
+
+
+        // 2.3 przez interfejs jako parametr + lambda
+        clientsList.sort(Client::compareTo);
 
 
     }
