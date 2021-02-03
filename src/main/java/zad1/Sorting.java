@@ -13,8 +13,9 @@ public class Sorting{
     }
 
     //metoda generyczna sortująca w odwrotnej kolejności
-    public <T>List<T> sortList(List<T> inputList){
-        Collections.sort(inputList, Collections.reverseOrder());
+    public <T>List<T> sortGenericList(List<T> inputList){
+//        inputList.sort(null);
+        Collections.sort(inputList,null);
         return inputList;
     }
 

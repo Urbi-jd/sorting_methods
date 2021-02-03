@@ -18,11 +18,11 @@ public class Main {
         Sorting sorting = new Sorting();
 
         sorting.printList(ints);
-        sorting.sortList(ints);
+        sorting.sortGenericList(ints);
         sorting.printList(ints);
 
         sorting.printList(strings);
-        sorting.sortList(strings);
+        sorting.sortGenericList(strings);
         sorting.printList(strings);
 
         Client client1 = new Client("Jan", "Kowalski", 32, 300000, 25);
